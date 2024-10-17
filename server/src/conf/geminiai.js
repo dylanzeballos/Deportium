@@ -3,8 +3,8 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const testConnection = async () => {
     try {
-        console.log('API Key:', process.env.API_KEY);  // Verifica que se cargue correctamente
-        const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+        console.log('API Key:', "AIzaSyCUtx1eN8xaJyCXucAUEKmJsgnL0IW9fMc");  // Verifica que se cargue correctamente
+        const genAI = new GoogleGenerativeAI("AIzaSyCUtx1eN8xaJyCXucAUEKmJsgnL0IW9fMc");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
         
         const prompt = "Hello, how are you?";
